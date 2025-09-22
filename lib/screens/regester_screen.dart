@@ -11,9 +11,22 @@ class RegesterScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [_getImage(), _getInformationTitle(), _getButtonRegester()],
+        child: CustomScrollView(
+          scrollDirection: Axis.vertical,
+          slivers: [
+            SliverPadding(
+              padding: EdgeInsets.symmetric(vertical: 60.h),
+              sliver: SliverToBoxAdapter(child: _getImage()),
+            ),
+            SliverPadding(
+              padding: EdgeInsets.symmetric(vertical: 10.h),
+              sliver: SliverToBoxAdapter(child: _getInformationTitle()),
+            ),
+            SliverPadding(
+              padding: EdgeInsets.symmetric(vertical: 30.h),
+              sliver: SliverToBoxAdapter(child: _getButtonRegester()),
+            ),
+          ],
         ),
       ),
     );
