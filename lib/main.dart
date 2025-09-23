@@ -1,3 +1,4 @@
+import 'package:aviz_app/screens/main_screen.dart';
 import 'package:aviz_app/screens/register/login_screen.dart';
 import 'package:aviz_app/screens/register/regester_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +17,7 @@ class Application extends StatelessWidget {
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: LoginScreen(),
-      ),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: MainScreen()),
     );
   }
 }

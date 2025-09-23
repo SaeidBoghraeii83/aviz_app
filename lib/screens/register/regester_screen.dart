@@ -96,7 +96,7 @@ Widget _getInformationTitle() {
           ),
         ),
       ),
-      SizedBox(height: 40.h),
+      SizedBox(height: 20.h),
       SmoothPageIndicator(
         count: 3,
         effect: ExpandingDotsEffect(

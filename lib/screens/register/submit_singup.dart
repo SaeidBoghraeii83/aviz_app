@@ -1,3 +1,4 @@
+import 'package:aviz_app/screens/home_screen.dart';
 import 'package:aviz_app/screens/register/welcome_screen.dart';
 import 'package:aviz_app/widget/color_project.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +118,7 @@ Widget _getButton(BuildContext context) {
     onPressed: () {
       Navigator.of(
         context,
-      ).push(MaterialPageRoute(builder: (context) => WelcomeScreen()));
+      ).push(MaterialPageRoute(builder: (context) => HomeScreen()));
     },
     child: Text(
       'تایید ثبت نام',
