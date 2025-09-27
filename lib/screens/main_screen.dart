@@ -1,3 +1,4 @@
+import 'package:aviz_app/screens/listing/category_listing_screen.dart';
 import 'package:aviz_app/screens/home_screen.dart';
 import 'package:aviz_app/screens/register/login_screen.dart';
 import 'package:aviz_app/screens/register/regester_screen.dart';
@@ -81,7 +82,7 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> getLayout() {
     return <Widget>[
       LoginScreen(),
-      RegesterScreen(),
+      AddListingScreen(),
       WelcomeScreen(),
       HomeScreen(),
     ];

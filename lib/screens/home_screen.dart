@@ -8,13 +8,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Image.asset('image/logo_with_not_background.png'),
-        centerTitle: true,
-      ),
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
+            SliverAppBar(
+              title: Image.asset('image/logo_with_not_background.png'),
+              centerTitle: true,
+              automaticallyImplyLeading: false,
+            ),
             SliverPadding(
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
               sliver: SliverToBoxAdapter(
